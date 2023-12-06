@@ -1,6 +1,6 @@
-# scholar_chat_app
+# chat_app
 
-A new Flutter project.
+A new Flutter project with firebase
 
 ## Getting Started
 
