@@ -22,7 +22,7 @@ class ChatBubble extends StatelessWidget {
           // height: 70,
           // width: 150,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(20),
                   bottomRight: Radius.circular(20)),
@@ -54,7 +54,7 @@ class ChatBubbleFriend extends StatelessWidget {
           // height: 70,
           // width: 150,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(20),
                   bottomLeft: Radius.circular(20)),
