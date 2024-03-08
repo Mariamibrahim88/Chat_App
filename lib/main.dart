@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:scholar_chat_app/pages/Log_In.dart';
 import 'package:scholar_chat_app/pages/chatPage.dart';
+import 'package:scholar_chat_app/pages/cubits/chat_cubit/chat_cubit.dart';
 import 'package:scholar_chat_app/pages/cubits/login_cubit/login_cubit.dart';
 import 'package:scholar_chat_app/pages/cubits/register_cubit/register_cubit.dart';
 import 'package:scholar_chat_app/pages/onBourding.dart';
@@ -32,6 +33,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => RegisterCubit(),
+        ),
+        BlocProvider(
+          create: (context) => ChatCubit(),
         )
       ],
       child: MaterialApp(

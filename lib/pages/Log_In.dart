@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:scholar_chat_app/const.dart';
+import 'package:scholar_chat_app/pages/cubits/chat_cubit/chat_cubit.dart';
 import 'package:scholar_chat_app/pages/cubits/login_cubit/login_cubit.dart';
 
 import '../const.dart';
@@ -29,6 +30,8 @@ class LogIn extends StatelessWidget {
           isLoading = true;
         } else if (state is LoginSuccess) {
           isLoading = false;
+          BlocProvider.of<ChatCubit>(context)
+              .getMessage(); //get old messages when i go to chatpage
           Navigator.pushNamed(context, 'ChatPage', arguments: email);
         } else if (state is LoginFailure) {
           isLoading = false;
