@@ -1,6 +1,6 @@
 # chat_app
 
-A new Flutter project with firebase
+A new Flutter project with firebase and Cubit as state Managment.
 
 ## Getting Started
 
